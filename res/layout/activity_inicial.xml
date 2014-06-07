@@ -1,11 +1,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="#ffffff"
+     android:background="#eae4d6" 
     
      android:focusable="true"
      android:focusableInTouchMode="true"
@@ -123,22 +124,44 @@
       
     <LinearLayout 
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"     
-    android:orientation="vertical"    
-    android:layout_weight="1"    
-    android:background="#eae4d6"
+    android:layout_height="fill_parent"     
+    android:orientation="vertical"        
+    android:background="#eae4d6"    
     >
            
        <ListView android:id="@+id/listatags"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:cacheColorHint="#00000000"              
-                 
-
+                android:cacheColorHint="#00000000"        
+                  android:layout_weight="0.8"                                     
                 />  
-               <!--     android:divider="@null"-->
-               <!--    android:dividerHeight="0dp" -->
-      </LinearLayout>
+                          
+         <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="90dp"     
+	    android:orientation="vertical"   
+	    android:layout_weight="0.2"   	 
+	    android:layout_marginBottom="0dp" 
+	    android:background="#eae4d6" 
+	     >
+	    <com.google.ads.AdView android:id="@+id/adView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginBottom = "0dp"	        
+	        ads:adUnitId="ca-app-pub-4749031357874111/7807545187"
+	        ads:adSize="BANNER"
+	        ads:testDevices="80A358713040120244"
+	        ads:loadAdOnCreate="true"
+	        android:background="#eae4d6" 
+	        />
+	    
+        </LinearLayout>
+       
+       </LinearLayout>    
+     
+      
       
     </LinearLayout>
+    
+ 
 </LinearLayout>

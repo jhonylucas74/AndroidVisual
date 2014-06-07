@@ -1,7 +1,7 @@
 package parser.varworks;
 
-import com.example.androidvisual.Var;
-import com.parserVisual.TradutorLinhas;
+import av.androidvisual.Var;
+import av.parserVisual.TradutorLinhas;
 
 public class caractereWork implements VarWork{
 

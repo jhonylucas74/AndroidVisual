@@ -1,9 +1,9 @@
 package parser.varworks;
 
-import com.example.androidvisual.ConsoleActivity;
-import com.example.androidvisual.Var;
-import com.parserVisual.ParserMath;
-import com.parserVisual.TradutorLinhas;
+import av.androidvisual.ConsoleActivity;
+import av.androidvisual.Var;
+import av.parserVisual.ParserMath;
+import av.parserVisual.TradutorLinhas;
 
 public class logicoWork implements VarWork{
 
